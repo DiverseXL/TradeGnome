@@ -136,12 +136,12 @@ export default function Intro({ onDone }) {
     return () => clearInterval(id);
   }, []);
 
-  function launch() {
+  const launch = useCallback(() => {
     if (doneRef.current) return;
     doneRef.current = true;
     setExiting(true);
     setTimeout(onDone, 700);
-  }
+  }, [onDone]);
 
   useEffect(() => {
   window.addEventListener('keydown', launch);

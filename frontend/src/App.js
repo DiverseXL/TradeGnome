@@ -153,7 +153,7 @@ function Results({ data }) {
         </TermWindow>
 
         <TermWindow title="agent-triggers.cfg">
-          <p className="panel-sub">// Conditions the monitor agent watches for</p>
+          <p className="panel-sub">{"// Conditions the monitor agent watches for"}</p>
           <ul className="trigger-list">
             {genome.agentTriggers.map((t, i) => (
               <li key={i} className="trigger-item">
@@ -186,7 +186,7 @@ function Results({ data }) {
       {/* Agent Monitor */}
       <AgentMonitor wallet={wallet} genome={genome} chain={data.chain} />
 
-      <p className="wallet-label">// wallet: <code>{wallet}</code></p>
+      <p className="wallet-label">{"// wallet: "}<code>{wallet}</code></p>
     </div>
   );
 }
