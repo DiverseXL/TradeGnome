@@ -144,9 +144,9 @@ export default function Intro({ onDone }) {
   }
 
   useEffect(() => {
-    window.addEventListener('keydown', launch);
-    return () => window.removeEventListener('keydown', launch);
-  }, []);
+  window.addEventListener('keydown', launch);
+  return () => window.removeEventListener('keydown', launch);
+}, [launch]);
 
   return (
     <div className={`intro ${exiting ? 'intro--exit' : ''}`} onClick={launch}>

@@ -106,7 +106,7 @@ export default function App() {
       {result && <Results data={result} />}
 
       <footer className="footer">
-        // Powered by GoldRush API · OpenAI GPT-4o · Built for Colosseum Hackathon
+     
       </footer>
     </div>
   );
