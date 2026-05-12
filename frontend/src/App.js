@@ -4,7 +4,7 @@ import './App.css';
 import DnaHelix from './DnaHelix';
 import Intro from './Intro';
 
-const API = 'http://localhost:3002';
+const API = 'https://tradegnome-production.up.railway.app';
 
 const CHAINS = [
   { value: 'eth-mainnet',    label: 'Ethereum' },
